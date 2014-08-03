@@ -1,0 +1,17 @@
+{
+  "name": "ember-mocha",
+  "version": "0.0.1",
+  "homepage": "https://github.com/david-casagrande/ember-mocha",
+  "authors": [
+    "David Casagrande <dncasagrande@gmail.com>"
+  ],
+  "description": "Ember test helpers for Mocha",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
