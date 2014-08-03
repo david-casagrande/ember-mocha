@@ -1,4 +1,4 @@
-define("after_image_load", 
+define("ember-mocha/after_image_load", 
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -11,7 +11,7 @@ define("after_image_load",
       imgLoaded.src = image;
     }
   });
-;define("after_run", 
+;define("ember-mocha/after_run", 
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -62,8 +62,8 @@ define("after_image_load",
 
     }
   });
-;define("app_lite", 
-  ["quad/app","quad/router","image_loaded","wait_for","ember/resolver","quad/initializers/inject_store_into_components","exports"],
+;define("ember-mocha/app_lite", 
+  ["quad/app","quad/router","ember-mocha/image_loaded","ember-mocha/wait_for","ember/resolver","quad/initializers/inject_store_into_components","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __dependency5__, __dependency6__, __exports__) {
     "use strict";
     var Application = __dependency1__["default"];
@@ -142,7 +142,7 @@ define("after_image_load",
       return App;
     }
   });
-;define("image_loaded", 
+;define("ember-mocha/image_loaded", 
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -179,7 +179,7 @@ define("after_image_load",
 
     __exports__["default"] = imageLoaded;
   });
-;define("wait_for", 
+;define("ember-mocha/wait_for", 
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -200,7 +200,7 @@ define("after_image_load",
 
     __exports__["default"] = waitFor;
   });
-;define("build_data_blob", 
+;define("ember-mocha/build_data_blob", 
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -217,8 +217,8 @@ define("after_image_load",
 
     __exports__["default"] = buildDataBlob;
   });
-;define("component_for", 
-  ["isolated_container","exports"],
+;define("ember-mocha/component_for", 
+  ["ember-mocha/isolated_container","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
     var isolatedContainer = __dependency1__["default"];
@@ -272,7 +272,7 @@ define("after_image_load",
       return append();
     }
   });
-;define("isolated_container", 
+;define("ember-mocha/isolated_container", 
   ["ember/resolver","quad/router","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -336,7 +336,7 @@ define("after_image_load",
       return container;
     }
   });
-;define("create_image_url", 
+;define("ember-mocha/create_image_url", 
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -359,8 +359,8 @@ define("after_image_load",
       return canvas.toDataURL("image/png");
     }
   });
-;define("model_for", 
-  ["isolated_container","ember/resolver","exports"],
+;define("ember-mocha/model_for", 
+  ["ember-mocha/isolated_container","ember/resolver","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
     var isolatedContainer = __dependency1__["default"];
@@ -409,8 +409,8 @@ define("after_image_load",
 
     __exports__["default"] = modelFor;
   });
-;define("start_app", 
-  ["quad/app","quad/router","image_loaded","wait_for","exports"],
+;define("ember-mocha/start_app", 
+  ["quad/app","quad/router","ember-mocha/image_loaded","ember-mocha/wait_for","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __exports__) {
     "use strict";
     var Application = __dependency1__["default"];
